@@ -12,4 +12,5 @@ export class PrimoComponenteComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  name: string = 'secondo';
 }

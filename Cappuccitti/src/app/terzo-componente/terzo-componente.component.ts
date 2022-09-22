@@ -9,7 +9,9 @@ export class TerzoComponenteComponent implements OnInit {
 
   constructor() { }
 
+  
   ngOnInit(): void {
   }
 
+  name: string = 'quarto';
 }

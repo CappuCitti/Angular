@@ -12,4 +12,5 @@ export class SecondoComponenteComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  name: string = 'terzo';
 }
