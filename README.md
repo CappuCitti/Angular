@@ -22,3 +22,17 @@ progetto
 ├── ... (file di configurazione dell'applicazione)
 └── src (file del progetto)
 ```
+
+## Come dichiarare ed istanziare variabili in un componente:
+```ts
+export class myComponent implements OnInit {
+  name: string; // <-- dichiara la proprietà 'name'
+
+  constructor() { 
+    this.name = 'Felipe'; // istanzia 'name' nel costruttore
+  }
+
+  ngOnInit() {
+  }
+}
+```
