@@ -2,3 +2,7 @@
   padding: min(100% - 600px, 2rem);
   column-count: 1;
 }
+
+body {
+  background-color: gray;
+}
