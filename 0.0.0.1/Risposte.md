@@ -74,7 +74,7 @@
 > 4. **Secondo te, quando viene creata l’istanza di una classe Angular?**
 > 5. **Come si aggiunge una proprietà (o variabile) al template HTML?**
 
-1. `var-name: var-type;`, in seguito istanziata nel costruttore per essere richiamata come proprieta' della classe.
+1. `varName: varType;`, in seguito istanziata nel costruttore per essere richiamata come proprieta' della classe.
 2. `constructor() {}`
 3. E' una funzione che definisce le variabili per l'instanza corrente, esso viene chiamato ogni volta che la classe viene richiesta.
 4. Ogni volta che il tag e' presente in una pagina richiesta.
@@ -99,10 +99,10 @@
 2. Un vettore in TypeScript puo' essere popolto con qualsiasi tipo di variale e tipo di variabile
 3. 👇
       1. Il tag `<li>` indica l'apertura di un elenco puntato
-      2. Indica a cosa e' attribuita la direttiva `ngFor`
-      3. Un elemento
-      4. Rappresenta l'istruzione javascript pre creare un ciclo `forof`
-         1. `names` rappresenta l'array di riferimento
+      2. Indica l'applicazione di una direttiva strutturale (per esempio `*ngFor`o `*ngIf`)
+      3. Un elemento del documento HTML (o XML)
+      4. Rappresenta l'istruzione javascript pre creare un ciclo *for...of*
+         1. `names` Rappresenta il vettore o array di riferimento
          2. `let name` Dichiara una variabile ad ogni ciclo, essa attribuisce il valore del corrente stato del ciclo
       5. Visualizza il valore della variabile del ciclo `for`
 4. ```html
@@ -126,7 +126,7 @@
    2. Si importa dal modulo `@angular/core`
    3. scrivendo di seguito il nome della variabile ed sil suo tipo `@Input() vanName: varType;`
 2. 👇
-   1. Si aggiunge come attributo al componente la variabile di riferimento (`<app-my-componenet [myVar]="myVar"></app-my-componenet>`)
+   1. Si aggiunge come attributo al componente la variabile di riferimento (`<app-my-componenet [inputVarName]="myVar"></app-my-componenet>`)
 3. ```html
     <ul>
         <li *ngFor="let bu of bravo">
