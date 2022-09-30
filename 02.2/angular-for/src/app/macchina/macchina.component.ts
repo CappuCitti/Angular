@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-macchina',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./macchina.component.css']
 })
 export class MacchinaComponent implements OnInit {
-
+  @Input() cm: string = "";
   constructor() { }
 
   ngOnInit(): void {

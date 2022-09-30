@@ -1,1 +1,5 @@
-<p>container works!</p>
+<ul>
+  <li *ngFor="let c of constructionMachinery">
+      <app-macchina [cm]="c"></app-macchina>
+  </li>
+</ul>
