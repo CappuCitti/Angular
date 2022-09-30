@@ -1,5 +1,5 @@
-<ul>
-  <li *ngFor="let c of constructionMachinery">
-      <app-macchina [cm]="c"></app-macchina>
-  </li>
-</ul>
+<div class="card-columns">
+  <div class="card" *ngFor="let c of constructionMachinery">
+    <app-macchina [cm]="c"></app-macchina>
+  </div>
+</div>
