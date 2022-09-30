@@ -79,3 +79,58 @@
 3. E' una funzione che definisce le variabili per l'instanza corrente, esso viene chiamato ogni volta che la classe viene richiesta.
 4. Ogni volta che il tag e' presente in una pagina richiesta.
 5. Utilizzando le doppie parentesi graffe con al loro il nome della variabile (*{{ }}*)
+
+### 02.1 [TEO]
+> 1. **Come si dichiara un vettore in una classe Angular?**
+> 2. **Come lo puoi riempire?**
+> 3. **Dato il seguente codice `<li *ngFor="let name of names">Hello {{ name }}<li>`?**
+>     1. **Cos'è il tag `<li>`?**
+>     2. **A cosa serve il simbolo `*`**
+>     3. **Cos'è un elemento DOM?**
+>     4. **Cosa fa la stringa `"let name of names"`**
+>         1. **Cos'è `names`**
+>         2. **Cosa fa `let name`**
+>     5. **Cosa visualizza la sintassi `{{name}}`**
+> 4. **Riscrivi il ciclo sopra supponendo di avere un vettore che si chiama cars e usando una variabile di ciclo che si chiama c**
+
+1. ```ts
+    varName: string[]; // Dichiarazione del vettore
+    ```
+2. Un vettore in TypeScript puo' essere popolto con qualsiasi tipo di variale e tipo di variabile
+3. 👇
+      1. Il tag `<li>` indica l'apertura di un elenco puntato
+      2. Indica a cosa e' attribuita la direttiva `ngFor`
+      3. Un elemento
+      4. Rappresenta l'istruzione javascript pre creare un ciclo `forof`
+         1. `names` rappresenta l'array di riferimento
+         2. `let name` Dichiara una variabile ad ogni ciclo, essa attribuisce il valore del corrente stato del ciclo
+      5. Visualizza il valore della variabile del ciclo `for`
+4. ```html
+    <li *ngFor="let c of cars">Car: {{ c }}<li>
+    ```
+
+> 1. **Rispetto al componente figlio (user-item)**
+>       1. **A cosa serve il decoratore @Input?**
+>       2. **Come si importa?**
+>       3. **Come si associa a una variabile?**
+> 2. **Rispetto al componente padre (user-list)**
+>       1. **Come si passa un valore a un componente filgio?**
+> 3. **Riscrivi il seguente codice rispettando questi vincoli**
+>       1. **Il componente figlio si chiama gionny.**
+>       2. **La variabile di input del componente figlio si chiama pupa**
+>       3. **Il vettore si chiama bravo**
+>       4. **La variabile di ciclo si chiama bu**
+
+1. 👇
+   1. Serve per ricevere un valore dal template principale
+   2. Si importa dal modulo `@angular/core`
+   3. scrivendo di seguito il nome della variabile ed sil suo tipo `@Input() vanName: varType;`
+2. 👇
+   1. Si aggiunge come attributo al componente la variabile di riferimento (`<app-my-componenet [myVar]="myVar"></app-my-componenet>`)
+3. ```html
+    <ul>
+        <li *ngFor="let bu of bravo">
+            <app-gionny [pupa]="bu"></app-gionny>
+        </li>
+    </ul>
+    ```
