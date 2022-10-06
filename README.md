@@ -59,7 +59,7 @@ Quando vengono applicate le direttive strutturali, generalmente sono precedute d
 ```
 
 ## Cosa e' [Bootstrap](https://getbootstrap.com/)
-E' un oolkit frontend potente, estensibile e ricco di funzionalità. Creato con Sass, esso utilizza il sistema di griglia e i componenti predefiniti pre creare pagine responsive.
+E' un toolkit frontend potente, estensibile e ricco di funzionalità. Creato con Sass, esso utilizza il sistema di griglia e i componenti predefiniti pre creare pagine responsive.
 ```shell
 # installazione da Angular CLI
 ng add @ng-bootstrap/ng-bootstrap

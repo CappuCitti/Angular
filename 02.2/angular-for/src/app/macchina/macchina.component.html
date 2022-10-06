@@ -1,4 +1,4 @@
 <div class="card-body">
   <h5 class="card-title">{{ cm }}</h5>
-  <p class="card-text">{{components.join(", ")}}</p>
+  <p class="card-text"><span *ngFor="let comp of components">{{ comp }}, </span></p>
 </div>
