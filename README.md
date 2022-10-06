@@ -57,3 +57,14 @@ Quando vengono applicate le direttive strutturali, generalmente sono precedute d
   <li *ngFor="let user of users">Hi {{ user }}!</li>
 </ul>
 ```
+
+## Cosa e' [Bootstrap](https://getbootstrap.com/)
+E' un oolkit frontend potente, estensibile e ricco di funzionalità. Creato con Sass, esso utilizza il sistema di griglia e i componenti predefiniti pre creare pagine responsive.
+```shell
+# installazione da Angular CLI
+ng add @ng-bootstrap/ng-bootstrap
+```
+```html
+<!-- CDN CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+```
