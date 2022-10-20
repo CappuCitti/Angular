@@ -1,0 +1,16 @@
+<p>Default: {{text}}</p>
+<p>Pipe <code>lowercase</code>: {{text | lowercase}}</p>
+<p>Pipe <code>uppercase</code>: {{text | uppercase}}</p>
+
+<hr>
+
+<p>Time now: {{now | date}}</p>
+<p>Time now formatted: {{ now | date:"dd/MM/yyyy" }}</p>
+<p>Interaction: {{now | date:format}}</p> <!-- get 'toggle' value from app.component.ts -->
+<button type="button" (click)="toggleFormat()">Toggle Format ({{toggle}})</button>
+
+<hr>
+
+<p>Money (locale): {{money | currency}}</p>
+<p>Canedian money: {{money | currency:'CAD'}}</p>
+<p>Euro money: {{money | currency:'EUR'}}</p>
