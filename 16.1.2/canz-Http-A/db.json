@@ -1,0 +1,48 @@
+{
+    "songlist": [
+        {
+            "album": {
+                "title": "The dark side of th moon",
+                "id": 0,
+                "artista": "Pink Floyd",
+                "durata": 44
+            },
+            "data_uscita": "1985-10-10T00:00:00.000Z",
+            "durata": 23,
+            "title": "Th wall"
+        },
+        {
+            "album": {
+                "title": "Lateralus",
+                "id": 1,
+                "artista": "Tool",
+                "durata": 78
+            },
+            "data_uscita": "2001-10-10T00:00:00.000Z",
+            "durata": 15,
+            "title": "The Grudge"
+        },
+        {
+            "album": {
+                "title": "Vespertine",
+                "id": 2,
+                "artista": "Bjork",
+                "durata": 55
+            },
+            "data_uscita": "2001-10-15T00:00:00.000Z",
+            "durata": 4,
+            "title": "Pagan Poetry"
+        },
+        {
+            "album": {
+                "title": "Shaodws of the sun",
+                "id": 3,
+                "artista": "Ulver",
+                "durata": 40
+            },
+            "data_uscita": "2010-10-15T00:00:00.000Z",
+            "durata": 4,
+            "title": "Eos"
+        }
+    ]
+}

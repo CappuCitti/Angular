@@ -55,3 +55,27 @@
 7. Una *arrow function* che attribuisce alla variabile data il contenuto dell'oggetto passatto come parametro, infine imposta il valore a falso della variabile `loading`
 8. La prima riga crea un bottone che richiama la funzione per creare una richiesta HTTP, la seconda mostra la scritta *loading...* solo se la variabile in `foo.component.ts` e' vera, la terza riga mostra il risultato della richiesta HTTP
 9. Per creare una richietsa POST bisogna utilizzare il la funzione `http.post`, in seguito si utilizza il metodo `subscribe` per passare la risposta ed assegnarla ad una variabile
+
+### 15.2 - [LAB]
+> 1. A cosa serve la classe Foo?
+> 2. Quale vantaggio pensi possa esserci nel creare un modello di dati prima di riceverli?
+> 3. Come si dichiara un Observable che riceve un tipo di dati specifico?
+> 4. Come faccio a dire quale tipo di dato sto per ricevere da una richiesta http?
+> 5. Per quale ragione fooData può essere di un tipo particolare di dati e non un generico Object?
+> 6. Spiega il ciclo *ngFor che visualizza gli articoli.
+> 7. A cosa servono le arrow Function?
+
+1. Serve per indicare il modello dei dati ottenuti
+2. Sapere di preciso il tipo di dato ottenuto ed ottimizzare il programma
+3. ```ts
+    o : Observable<TypedClass[]>;
+   ```
+4. ```ts
+    constructor(public http: HttpClient) {
+      this.http.get<TypedClass[]>(url);
+    }
+    
+   ```
+5. Perche' e' inizializzato come ogeetto tipizzato
+6. Per ogni oggetto contenuto nell'array `fooData` viene chiamato `art`.
+7. Funzioni senza nome
