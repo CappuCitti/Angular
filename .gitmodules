@@ -1,3 +1,7 @@
 [submodule "Bootstrap"]
 	path = Bootstrap
 	url = https://github.com/CappuCitti/Esercizi-Bootstrap
+[submodule "01.2"]
+	path = Spotify-API
+	url = https://github.com/CappuCitti/Spotify-API
+	branch = main
