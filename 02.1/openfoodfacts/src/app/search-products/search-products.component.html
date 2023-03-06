@@ -1,1 +1,11 @@
-<p>search-products works!</p>
+<div class="container py-5">
+  <div class="pb-5">
+    <input
+      type="text"
+      (keyup)="search($event)"
+      class="form-control"
+      placeholder="Cerca un prodotto"
+    />
+  </div>
+  {{data | json}}
+</div>
