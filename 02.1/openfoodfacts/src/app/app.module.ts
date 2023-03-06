@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { SearchProductsComponent } from './search-products/search-products.component';
 import { ProductComponent } from './product/product.component';
