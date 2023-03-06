@@ -1,0 +1,14 @@
+<div class="card">
+  <img
+    [src]="item.image_front_url"
+    class="card-img-top"
+    [alt]="item.product_name"
+  />
+  <div class="card-body">
+    <h5 class="card-title">
+      <a href="javascipt:void(0)" [routerLink]="['/products', item.id]">{{
+        item.product_name
+      }}</a>
+    </h5>
+  </div>
+</div>

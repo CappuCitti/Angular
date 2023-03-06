@@ -1,1 +1,91 @@
-<p>product works!</p>
+<div class="container py-5">
+  <div class="row">
+    <div class="col">
+      <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a routerLink="/">Prodotti</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ product.product_name }}
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <div class="text-center text-muted" *ngIf="product.id != id">
+    Nessun prodotto trovato con questo ID
+  </div>
+
+  <div class="row" *ngIf="product.id == id">
+    <div class="col-lg-4">
+      <div class="card mb-4">
+        <div class="card-body text-center">
+          <img
+            [src]="product.image_front_url"
+            [alt]="product.product_name"
+            class="rounded img-fluid"
+          />
+          <h5 class="my-3">{{ product.product_name }}</h5>
+          <div class="d-flex justify-content-center mb-2">
+            <a
+              class="btn btn-outline-primary ms-1"
+              [href]="product.url"
+              target="_blank"
+              ><b>↗</b>Altro</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Categorie</p>
+            </div>
+            <div class="col-sm-9">
+              <p class="text-muted mb-0">
+                {{ product.categories_tags.join(", ") }}
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-sm-3">
+              <p class="mb-0">Allergeni</p>
+            </div>
+            <div class="col-sm-9">
+              <p class="text-muted mb-0">
+                {{ product.allergens_hierarchy.join(", ") }}
+              </p>
+            </div>
+          </div>
+          <!-- <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Popolarita'</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{product.popularity}}</p>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <h3 *ngIf="product.id == id">Album</h3>
+    <div class="row row-cols-1 row-cols-md-4 g-4" *ngIf="product.id == id">
+      <div class="col" *ngFor="let a of albums">
+        <div class="card">
+          <a [routerLink]="['/album', a.id]">
+            <img [src]="a.images[0].url" class="card-img-top" [alt]="a.name" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">{{ a.name }}</h5>
+          </div>
+        </div>
+      </div>
+    </div> -->
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/models/Product.model';
 import { ApiService } from 'src/services/api.service';
 
 @Component({
@@ -7,7 +8,7 @@ import { ApiService } from 'src/services/api.service';
   styleUrls: ['./search-products.component.scss']
 })
 export class SearchProductsComponent implements OnInit{
-  data!: any;
+  data: Product[] = [];
 
   constructor(private api: ApiService) {}
 
@@ -17,6 +18,6 @@ export class SearchProductsComponent implements OnInit{
 
   search(e: any) {
     var q = e.target.value;
-    this.api.products(q).subscribe(data => this.data = data);
+    this.api.products(q).subscribe(data => this.data = data.products);
   }
 }
