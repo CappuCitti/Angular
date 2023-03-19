@@ -11,12 +11,12 @@ Inoltre, il sistema di routing di Angular ci consente di utilizzare i parametri 
 # Come creare una applicazione con il *Routing*
 Quando utilizziamo il comando `ng` per creare una nuova applicazione questo ci chiede se vogliamo abilitare i routing, clicchiamo **Y** e premiamo **INVIO**.
 ```console
-$ ng new API-and-Routing
+$ ng new pokemon
 ? Would you like to add Angular routing? (y/N) y
 ```
 
 ### Cosa crea Angular?
-All'interno della cartella [app](./API-and-Routing/src/app/) verrà creato in aggiunta il file [app-routing.module.ts](API-and-Routing/src/app/app-routing.module.ts) dove a suo interno si potranno configurare le *routes*, come qui sotto nell'esempio.
+All'interno della cartella [app](./pokemon/src/app/) verrà creato in aggiunta il file [app-routing.module.ts](./pokemon/src/app/app-routing.module.ts) dove a suo interno si potranno configurare le *routes*, come qui sotto nell'esempio.
 ```ts
 const routes: Routes = [
   {path: '', component: HomeComponent},                 // Primo componente che viene caricato quando viene caricato il sito ("/")
@@ -124,7 +124,7 @@ export class PokemonService {
   }
 }
 ```
-N.B.: Quando utilizzi `@angular/common/http` è sempre necessario importarlo in [app.module.ts](./API-and-Routing/src/app/app.module.ts).
+N.B.: Quando utilizzi `@angular/common/http` è sempre necessario importarlo in [app.module.ts](./pokemon/src/app/app.module.ts).
 
 ### Utilizzare un servizio
 Una volta creato un servizio possiamo utilizzarlo in qualsiasi parte del nostro codice semplicemente importandolo e richiamandolo.
