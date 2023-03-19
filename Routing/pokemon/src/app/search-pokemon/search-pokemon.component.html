@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="cold-md-12 text-center pt-3">
+    <form>
+      <input type="text" (keyup)="search($event)" placeholder="Cerca un Pokemon" width="max-width">
+    </form>
+
+    <p *ngIf="notFound">Pokemon non trovato</p>
+
+    <div *ngIf="!notFound && pokemon">
+      <p><b>{{pokemon.name}}</b> trovato, clicca <a [routerLink]="['/pokemon', pokemon.id]">qui</a> per saperne di piu'!
+      </p>
+    </div>
+  </div>
+</div>
