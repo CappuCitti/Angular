@@ -5,3 +5,6 @@
 	path = Spotify-API
 	url = https://github.com/CappuCitti/Spotify-API
 	branch = main
+[submodule "TheMealDB-API-and-routing"]
+	path = TheMealDB-API-and-routing
+	url = https://github.com/CappuCitti/TheMealDB-API-and-routing
